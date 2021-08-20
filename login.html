@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/android-icon-36x36.png" />
+    <title>내셔널지오그래픽</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index-banner.js"></script>
+  </head>
+  <body>
+    <!-- ============== header ============== -->
+    <header>
+      <nav id="nav" class="clearFix">
+        <h1 class="nav__logo">
+          <a href="index.html"
+            ><img src="images/ngc_logo.png" alt="national geographic logo"
+          /></a>
+        </h1>
+        <ul class="nav__menu">
+          <li><a href="about.html">about</a></li>
+          <li><a href="channel.html">channel</a></li>
+          <li>
+            <a href="http://natgeokorea.com/magazine/" target="_blank"
+              >magazines</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/natgeokorea" target="_blank"
+              >video</a
+            >
+          </li>
+          <li><a href="news.html">news</a></li>
+          <li>
+            <a href="https://www.naturestore.co.kr/" target="_blank">store</a>
+          </li>
+        </ul>
+        <ul class="nav__gnb">
+          <li><a href="login.html">login</a></li>
+          <li><a href="sign-up.html">sign up</a></li>
+          <li>
+            <a href="#void"><i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <button class="hamBtn">
+              <a class="hamBtn__inner">
+                <span class="hamBtn__inner-1"></span>
+                <span class="hamBtn__inner-2"></span>
+                <span class="hamBtn__inner-3"></span>
+              </a>
+            </button>
+            <div class="subMenu">
+              <ul class="subMenu__sns clearFix">
+                <li>
+                  <a href="https://www.instagram.com/natgeokorea/"
+                    ><img src="images/sns_03.png" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/NatGeoKorea/"
+                    ><img src="images/sns_05.png" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/natgeokorea/videos"
+                    ><img src="images/sns_07.png" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+              <ul class="subMenu__nav">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="channel.html">channel</a></li>
+                <li>
+                  <a href="http://natgeokorea.com/magazine/">magazines</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/natgeokorea">video</a>
+                </li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="https://www.naturestore.co.kr/">store</a></li>
+              </ul>
+              <img
+                src="images/ngc_logo.png"
+                alt="subMenu-logo"
+                class="subMenu__logo"
+              />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ============== container ============== -->
+    <div class="loginWrap">
+      <div class="center">
+        <h2 class="title">로그인</h2>
+        <!-- 1. 회원 로그인 -->
+        <div class="login">
+          <div class="Box">
+            <span>회원 로그인</span>
+            <p>
+              가입하신 아이디와 비밀번호를 입력해주세요. <br />
+              비밀번호는 대소문자를 구분합니다.
+            </p>
+            <form method="GET" id="login-form">
+              <input
+                class="input_text-a"
+                name="member-id"
+                type="text"
+                placeholder="MEMBER ID"
+                required
+              />
+              <input
+                class="input_text-b"
+                name="password"
+                type="password"
+                placeholder="PASSWORD"
+                required
+              />
+              <input type="checkbox" id="id" name="id" />
+              <label for="id"><span></span>아이디 저장</label>
+
+              <input type="checkbox" id="log" name="login" />
+              <label for="log"><span></span>자동 로그인</label>
+              <input type="submit" value="LOG-IN" />
+            </form>
+          </div>
+        </div>
+        <!-- 2. 회원가입 -->
+        <div class="signUp">
+          <div class="Box">
+            <span>회원가입</span>
+            <p>
+              아직 회원이 아니신가요?<br />
+              회원가입을 하시면 다양한 혜택을 편리하게 이용하실 수 있습니다.
+            </p>
+            <a class="btn1" href="sign-up.html">JOIN-US</a>
+            <p>
+              아이디 혹은 비밀번호를 잊으셨나요?<br />
+              간단한 정보를 입력 후 잃어버린 정보를 찾으실 수 있습니다.
+            </p>
+            <a class="btn2" href="#">ID/PASSWORD</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============== footer ============== -->
+    <footer>
+      <div class="topBtn">
+        <a href="#"><img src="images/btn-top.png" alt="top-button" /></a>
+      </div>
+
+      <div class="footerTop">
+        <nav class="footer-menu center">
+          <ul class="menu">
+            <li><a href="about.html">ABOUT</a></li>
+            <li>
+              <a href="channel.html">CHANNEL</a>
+            </li>
+            <li>
+              <a href="http://natgeokorea.com/magazine/" target="_blank"
+                >MAGAZINES</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/user/natgeokorea" target="_blank"
+                >VIDEO</a
+              >
+            </li>
+            <li><a href="news.html">NEWS</a></li>
+            <li>
+              <a href="https://www.naturestore.co.kr/" target="_blank">STORE</a>
+            </li>
+          </ul>
+          <ul class="sns">
+            <li>
+              <a
+                href="https://www.youtube.com/user/natgeokorea/videos"
+                target="_blank"
+                ><i class="fab fa-youtube-square fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/NatGeoKorea/" target="_blank"
+                ><i class="fab fa-facebook-square fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/natgeokorea/" target="_blank"
+                ><i class="fab fa-instagram-square fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footerBottom center">
+        <p class="footer-logo"><img src="images/logo-big.jpg" alt="" /></p>
+        <div class="contactUs">
+          <p>CONTACT US</p>
+          <ul class="contact">
+            <li><span>의류</span><span>02.1588.2906</span></li>
+            <li><span>매거진</span><span>02.2004.8800</span></li>
+            <li><span>트래블러 매거진</span><span>02.763.8600</span></li>
+            <li><span>방송</span><span>02.3490.2742</span></li>
+            <li><span>모바일 액세서리</span><span>080.643.12345</span></li>
+          </ul>
+          <div class="info">
+            <small
+              >COPYRIGHT © 2018 NATIONAL GEOGRAPHIC KOREA LLT. ALL RIGHT
+              RESERVED</small
+            >
+            <ul class="personal-info">
+              <li><a href="#">개인정보 취급방침[업데이트됨]</a></li>
+              <li><a href="#">이용약관</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

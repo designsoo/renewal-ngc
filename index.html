@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/android-icon-36x36.png" />
+    <title>내셔널지오그래픽</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index-banner.js"></script>
+    <link rel="stylesheet" href="css/slick-theme.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <script src="js/slick.min.js"></script>
+  </head>
+  <body>
+    <!-- ============== header ============== -->
+    <header>
+      <nav id="nav" class="clearFix">
+        <h1 class="nav__logo">
+          <a href="index.html"
+            ><img src="images/ngc_logo.png" alt="national geographic logo"
+          /></a>
+        </h1>
+        <ul class="nav__menu">
+          <li><a href="about.html">about</a></li>
+          <li><a href="channel.html">channel</a></li>
+          <li>
+            <a href="http://natgeokorea.com/magazine/" target="_blank"
+              >magazines</a
+            >
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/natgeokorea" target="_blank"
+              >video</a
+            >
+          </li>
+          <li><a href="news.html">news</a></li>
+          <li>
+            <a href="https://www.naturestore.co.kr/" target="_blank">store</a>
+          </li>
+        </ul>
+        <ul class="nav__gnb">
+          <li><a href="login.html">login</a></li>
+          <li><a href="sign-up.html">sign up</a></li>
+          <li>
+            <a href="#void"><i class="fas fa-search"></i></a>
+          </li>
+          <li>
+            <button class="hamBtn">
+              <a class="hamBtn__inner">
+                <span class="hamBtn__inner-1"></span>
+                <span class="hamBtn__inner-2"></span>
+                <span class="hamBtn__inner-3"></span>
+              </a>
+            </button>
+            <div class="subMenu">
+              <ul class="subMenu__sns clearFix">
+                <li>
+                  <a href="https://www.instagram.com/natgeokorea/"
+                    ><img src="images/sns_03.png" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/NatGeoKorea/"
+                    ><img src="images/sns_05.png" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/natgeokorea/videos"
+                    ><img src="images/sns_07.png" alt="twitter"
+                  /></a>
+                </li>
+              </ul>
+              <ul class="subMenu__nav">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="channel.html">channel</a></li>
+                <li>
+                  <a href="http://natgeokorea.com/magazine/">magazines</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/user/natgeokorea">video</a>
+                </li>
+                <li><a href="news.html">news</a></li>
+                <li><a href="https://www.naturestore.co.kr/">store</a></li>
+              </ul>
+              <img
+                src="images/ngc_logo.png"
+                alt="subMenu-logo"
+                class="subMenu__logo"
+              />
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- pager -->
+    <!-- <ul class="pager">
+      <li class="active"><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+      <li><a href="#"></a></li>
+    </ul> -->
+
+    <!-- ============== mainBanner ============== -->
+    <div class="mainBanner clearFix">
+      <ul class="banner">
+        <li class="bg-1">
+          <div class="banner__content">
+            <h2>SHARK <span>ATTACK5</span></h2>
+            <a class="moreBtn" href="http://natgeokorea.com/program.php?p=61"
+              ><span> WATCH NOW</span></a
+            >
+          </div>
+        </li>
+        <li class="bg-2">
+          <div class="banner__content">
+            <h2>KINGDOM3</h2>
+            <a class="moreBtn" href="http://natgeokorea.com/program.php?p=59"
+              ><span> WATCH NOW</span></a
+            >
+          </div>
+        </li>
+        <li class="bg-3">
+          <div class="banner__content">
+            <h2>KINGDOM OF <span>THE WOLF</span></h2>
+            <a class="moreBtn" href="http://natgeokorea.com/program.php?p=65"
+              ><span> WATCH NOW</span></a
+            >
+          </div>
+        </li>
+      </ul>
+
+      <div class="controlWrap">
+        <ul class="control-item">
+          <a href="#">
+            <li class="active">01<span>Shark Attack5</span></li>
+            <li>02<span>Kingdom3</span></li>
+            <li>03<span>Kingdom of the wolf</span></li>
+          </a>
+        </ul>
+        <div class="control-bar">
+          <div class="control-bar-fill"></div>
+        </div>
+      </div>
+
+      <ul class="sns">
+        <li>
+          <a
+            href="https://www.youtube.com/user/natgeokorea/videos"
+            target="_blank"
+            ><i class="fab fa-youtube-square fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/NatGeoKorea/" target="_blank"
+            ><i class="fab fa-facebook-square fa-3x"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/natgeokorea/" target="_blank"
+            ><i class="fab fa-instagram-square fa-3x"></i
+          ></a>
+        </li>
+      </ul>
+
+      <div class="scrollDownWrap">
+        <div class="scrollDown">
+          <div class="mouse">
+            <div class="ball"></div>
+          </div>
+          <span>SCROLL DOWN</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============== container ============== -->
+    <main>
+      <!-- 1. channel -->
+      <section class="channelWrap">
+        <h2 class="blind">channel-pick-4</h2>
+        <!-- 1) channel-picked -->
+        <ul class="channel-picked">
+          <li class="channel-picked__item item-1">
+            <div class="text-box">
+              <h3 class="title">CHANNEL</h3>
+              <div class="description">
+                <span>KINGDOM3</span>
+                <p>
+                  맹수들의 왕국에 새로운 공포 정치가 시작된다. 하이에나 부대의
+                  지휘관 마모체가 왕좌를 차지하고, 마모체가 이끄는 반란군은 이
+                  땅을 두려움에 떨게 한다. 분노에 찬 사자 무리가 복수를 계획하는
+                  가운데 들개들은 저항 세력을 결집한다. 아무도 건드리지 못하는
+                  존재였던 풀라는 자신의 왕국을 지키기 위해 싸운다. 하지만 물이
+                  범람하면서 어쩔 수 없이 적들이 한자리에 모이고, 죄 없는
+                  동물들이 희생양이 된다. 혼란이 지배하는 시기에는 생존만이
+                  유일한 법칙이다.
+                </p>
+              </div>
+              <div class="episodes">
+                <span>EPISODES</span>
+                <ul>
+                  <li><span>1부</span><span>Dawn of Darkness</span></li>
+                  <li><span>2부</span><span>Regin of Terror</span></li>
+                  <li><span>3부</span><span>Rise of Exiles</span></li>
+                  <li><span>4부</span><span>War Games</span></li>
+                  <li><span>5부</span><span>Fall of the Queen</span></li>
+                  <li><span>6부</span><span>Ascendency</span></li>
+                </ul>
+              </div>
+              <a href="http://natgeokorea.com/program.php?p=59" class="moreBtn"
+                ><span>WATCH NOW</span></a
+              >
+            </div>
+          </li>
+          <li class="channel-picked__item item-2">
+            <div class="text-box">
+              <h3 class="title">CHANNEL</h3>
+              <div class="description">
+                <span>WILD FIGHT CLUB4</span>
+                <p>
+                  "와일드 파이트 클럽4"는 동물의 왕국의 거대하고 거친 파이터들의
+                  전투를 보여 준다. 동물들이 서로의 아드레날린을 솟구치게 하는
+                  엄청난 무기와 자원, 전략 등을 살펴본다. 또한, 멋진 모션
+                  그래픽과 새로운 과학 기술을 사용해 치명적인 전략과 정교한
+                  무기가 가득한 동물의 왕국의 전투를 경험한다.
+                </p>
+              </div>
+              <div class="episodes">
+                <span>EPISODES</span>
+                <ul>
+                  <li><span>1부</span><span>거인의 제국</span></li>
+                  <li><span>2부</span><span>아프리카의 암살자</span></li>
+                  <li><span>3부</span><span>킹 슬레이어</span></li>
+                  <li><span>4부</span><span>분노의 이빨</span></li>
+                  <li><span>5부</span><span>힘의 충돌</span></li>
+                  <li><span>6부</span><span>죽음의 서막</span></li>
+                </ul>
+              </div>
+              <a href="http://natgeokorea.com/program.php?p=7" class="moreBtn"
+                ><span>WATCH NOW</span></a
+              >
+            </div>
+          </li>
+          <li class="channel-picked__item item-3">
+            <div class="text-box">
+              <h3 class="title">CHANNEL</h3>
+              <div class="description">
+                <span>KINGDOM OF THE WOLF</span>
+                <p>
+                  내셔널지오그래픽 탐험가이자 사진가인 로넌 도너번은 희귀한 북극
+                  늑대를 찾아서 지금껏 이뤄진 적 없는 특별한 여행을 떠난다.
+                  ‘북극의 정원’으로 불리는 엘즈미어섬에서 1년 중 가장 해가
+                  길어지는 시기부터, 여름내 살을 찌우며 길고 어두운 북극의
+                  겨울을 준비하는 북극 늑대 가족을 시청자들에게 소개한다.
+                </p>
+              </div>
+              <div class="episodes">
+                <span>EPISODES</span>
+                <ul>
+                  <li><span>1부</span><span>수색</span></li>
+                  <li><span>2부</span><span>늑대여왕</span></li>
+                  <li><span>3부</span><span>마지막 사냥</span></li>
+                </ul>
+              </div>
+              <a href="http://natgeokorea.com/program.php?p=65" class="moreBtn"
+                ><span>WATCH NOW</span></a
+              >
+            </div>
+          </li>
+          <li class="channel-picked__item item-4">
+            <div class="text-box">
+              <h3 class="title">CHANNEL</h3>
+              <div class="description">
+                <span>SHARK ATTACK5</span>
+                <p>
+                  미국의 해안 지대와 전 세계 이국적인 해변 곳곳에서 상어가
+                  인간을 공격하면서, 꿈같던 휴가가 악몽으로 변한다. 이러한 공격
+                  중 상당수가 갑자기 이뤄졌고, 한 번에 많은 상어가 의외의 장소에
+                  나타난 경우가 많아서 지역 주민과 과학자들 모두 혼란에 빠졌다.
+                  내셔널지오그래픽과 함께 수수께끼 같은 사건들을 조사하고,
+                  무엇이 이 무시무시한 어류에게 영향을 주는지 알아본다.
+                </p>
+              </div>
+              <div class="episodes">
+                <span>EPISODES</span>
+                <ul>
+                  <li><span>1부</span><span>멕시코만의 습격</span></li>
+                  <li><span>2부</span><span>상어 습격 지역</span></li>
+                  <li><span>3부</span><span>신혼여행의 악몽</span></li>
+                  <li><span>4부</span><span>샤크 더블 어택</span></li>
+                  <li><span>5부</span><span>습격의 시작</span></li>
+                  <li><span>6부</span><span>혼돈에 빠진 캘리포니아</span></li>
+                </ul>
+              </div>
+              <a href="http://natgeokorea.com/program.php?p=61" class="moreBtn"
+                ><span>WATCH NOW</span></a
+              >
+            </div>
+          </li>
+        </ul>
+        <!-- 2) channel-item -->
+        <div class="itemWrap">
+          <ul class="channel clearFix">
+            <li class="channel-item">
+              <a href="#void">
+                <div>
+                  <img src="images/channel-03.jpg" alt="channel-kingdom3" />
+                  <div class="channel-item__contents">
+                    <span>KINGDOM3</span>
+                    <p>
+                      맹수들의 왕국에 새로운 공포 정치가 시작된다. 혼란이
+                      지배하는 시기에는 생존만이 유일한 법칙이다.
+                    </p>
+                  </div>
+                  <div class="gradientBox"></div>
+                </div>
+              </a>
+            </li>
+            <li class="channel-item">
+              <a href="#void">
+                <div>
+                  <img src="images/channel-02.jpg" alt="channel-plastic" />
+                  <div class="channel-item__contents">
+                    <span>WILD <span>FIGHT CLUB4</span></span>
+                    <p>
+                      동물의 왕국의 거대하고 거친 파이터들의 전투를 보여 준다.
+                      동물들이 서로의 아드레날린을 솟구치게 하는 엄청난 무기와
+                      자원, 전략 등을 살펴본다.
+                    </p>
+                  </div>
+                  <div class="gradientBox"></div>
+                </div>
+              </a>
+            </li>
+            <li class="channel-item">
+              <a href="#void">
+                <div>
+                  <img src="images/channel-01.jpg" alt="channel-wolf" />
+                  <div class="channel-item__contents">
+                    <span>KINGDOM OF <span>THE WOLF</span></span>
+                    <p>
+                      ‘북극의 정원’으로 불리는 엘즈미어섬에서 1년 중 가장 해가
+                      길어지는 시기부터, 여름내 살을 찌우며 길고 어두운 북극의
+                      겨울을 준비하는 북극 늑대 가족을 시청자들에게 소개한다.
+                    </p>
+                  </div>
+                  <div class="gradientBox"></div>
+                </div>
+              </a>
+            </li>
+            <li class="channel-item">
+              <a href="#void">
+                <div>
+                  <img src="images/channel-04.jpg" alt="channel-shark" />
+                  <div class="channel-item__contents">
+                    <span>SHARK <span>ATTACK5</span></span>
+                    <p>
+                      미국의 해안 지대와 전 세계 이국적인 해변 곳곳에서 상어가
+                      인간을 공격하면서, 꿈같던 휴가가 악몽으로 변한다.
+                    </p>
+                  </div>
+                  <div class="gradientBox"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 2.magazines -->
+      <section class="magazinesWrap">
+        <h2 class="title">MAGAZINES</h2>
+        <div class="mgzContainer">
+          <ul class="magazines">
+            <li class="magazines-item">
+              <a href="#">
+                <div class="items">
+                  <div class="items__img">
+                    <img src="images/magazines-5.png" alt="megazines-image" />
+                  </div>
+                  <p>national <span>geographic</span></p>
+                  <div class="items__cotents">
+                    <span>magazine</span>
+                    <p>LAST VOICES OF <span>WORLD WAR2</span></p>
+                    <span>그들의 마지막 목소리</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="magazines-item">
+              <a href="#">
+                <div class="items">
+                  <div class="items__img">
+                    <img src="images/magazines-4.png" alt="megazines-image" />
+                  </div>
+                  <p>national <span>geographic</span></p>
+                  <div class="items__cotents">
+                    <span>magazine</span>
+                    <p>WORLD ON<span>THE MOVE</span></p>
+                    <span>전 세계 이주민들과 난민들</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="magazines-item">
+              <a href="#">
+                <div class="items">
+                  <div class="items__img">
+                    <img src="images/magazines-3.png" alt="megazines-image" />
+                  </div>
+                  <p>national <span>geographic</span></p>
+                  <div class="items__cotents">
+                    <span>traveler magazine</span>
+                    <p>JOURNEYS OF <span>A LIFETIME</span></p>
+                    <span>생존의 상징</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="magazines-item">
+              <a href="#">
+                <div class="items">
+                  <div class="items__img">
+                    <img src="images/magazines-2.png" alt="megazines-image" />
+                  </div>
+                  <p>national <span>geographic</span></p>
+                  <div class="items__cotents">
+                    <span>traveler magazine</span>
+                    <p>DELICIOUS <span>DESTINATIONS</span></p>
+                    <span>전지적 야생동물 시점</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li class="magazines-item">
+              <a href="#">
+                <div class="items">
+                  <div class="items__img">
+                    <img src="images/magazines_1.jpg" alt="megazines-image" />
+                  </div>
+                  <p>national <span>geographic</span></p>
+                  <div class="items__cotents">
+                    <span>magazine</span>
+                    <p>LAST<span>OF ITS KIND</span></p>
+                    <span>사라져가는 동물들</span>
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="magazines-item__text-box">
+          <p>SUBSCRIBER <span>EXCLUSIVE</span>CONTENT</p>
+          <a
+            class="moreBtn"
+            href="http://natgeokorea.com/magazine/"
+            target="_blank"
+            ><span>SEE MORE</span></a
+          >
+        </div>
+      </section>
+      <!-- 3.video -->
+      <section class="videoWrap clearFix">
+        <h2 class="title">VIDEO</h2>
+        <ul class="video-slider center">
+          <li class="slider-item s-1">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/mDi51dEloLM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="video-item__text-box">
+              <span>Ramses, Master of Diplomacy | Lost Treasures of Egypt</span>
+            </div>
+          </li>
+          <li class="slider-item s-2">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/-NNwXROZ-48"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="video-item__text-box">
+              <span
+                >The Secret Culture of Orcas | Podcast | Overheard at National
+                Geographic</span
+              >
+            </div>
+          </li>
+          <li class="slider-item s-3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/7OMxBlK46wY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="video-item__text-box">
+              <span>Yellowstone (Full Episode) | America's National Parks</span>
+            </div>
+          </li>
+          <li class="slider-item s-4">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/MNrfIo46SnQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="video-item__text-box">
+              <span
+                >Everest Glaciology - Truth is in the Ice | National
+                Geographic</span
+              >
+            </div>
+          </li>
+          <li class="slider-item s-5">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/M76sB_YPoU0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <div class="video-item__text-box">
+              <span>Plant a Pollinator Garden | National Geographic</span>
+            </div>
+          </li>
+        </ul>
+        <ul class="arrowSlider">
+          <li class="prev">
+            <img src="images/ch-arrow_1.png" alt="prev-button" />
+          </li>
+          <li class="next">
+            <img src="images/ch-arrow_2.png" alt="next-button" />
+          </li>
+        </ul>
+      </section>
+      <!-- 4.news -->
+      <section class="newsWrap">
+        <h2 class="blind">NEWS</h2>
+        <div class="news">
+          <h3 class="title">NEWS</h3>
+          <span>
+            맨몸으로 절벽을 오르는 등반가<br />
+            <span>알렉스 호놀드</span>의 프리솔로
+          </span>
+          <p>
+            지난 25일 미국 로스엔젤레스에서 열린 제 19회 아카데미 시상식에서
+            ‘장편 다큐멘터리 상’을 받은 내셔널지오그래픽의 <프리솔로>가 4월,
+            내셔널 지오그래픽 채널로 찾아온다. 다큐멘터리 부문에서 아카데미
+            수상을 한 산악영화는 <프리솔로>가 처음이다. <br /><br />
+            영화의 제목이자 알렉스 호놀드(33세)가 도전한 ‘프리솔로’란, 로프나
+            어떠한 보호 장구 없이 맨몸으로 산을 오르는 것을 뜻한다. 등반가
+            알렉스는 오로지 자신의 손끝과 신발의 마찰력에 의지한 채 1000m에
+            달하는 높이의 암벽을 오른다.
+          </p>
+          <a class="moreBtn" href="news.html"><span>SEE MORE</span></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============== footer ============== -->
+    <footer>
+      <div class="topBtn">
+        <a href="#"><img src="images/btn-top.png" alt="top-button" /></a>
+      </div>
+
+      <div class="footerTop">
+        <nav class="footer-menu center">
+          <ul class="menu">
+            <li><a href="about.html">ABOUT</a></li>
+            <li>
+              <a href="channel.html">CHANNEL</a>
+            </li>
+            <li>
+              <a href="http://natgeokorea.com/magazine/" target="_blank"
+                >MAGAZINES</a
+              >
+            </li>
+            <li>
+              <a href="https://www.youtube.com/user/natgeokorea" target="_blank"
+                >VIDEO</a
+              >
+            </li>
+            <li><a href="news.html">NEWS</a></li>
+            <li>
+              <a href="https://www.naturestore.co.kr/" target="_blank">STORE</a>
+            </li>
+          </ul>
+          <ul class="sns">
+            <li>
+              <a
+                href="https://www.youtube.com/user/natgeokorea/videos"
+                target="_blank"
+                ><i class="fab fa-youtube-square fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/NatGeoKorea/" target="_blank"
+                ><i class="fab fa-facebook-square fa-2x"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/natgeokorea/" target="_blank"
+                ><i class="fab fa-instagram-square fa-2x"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footerBottom center">
+        <p class="footer-logo"><img src="images/logo-big.jpg" alt="" /></p>
+        <div class="contactUs">
+          <p>CONTACT US</p>
+          <ul class="contact">
+            <li><span>의류</span><span>02.1588.2906</span></li>
+            <li><span>매거진</span><span>02.2004.8800</span></li>
+            <li><span>트래블러 매거진</span><span>02.763.8600</span></li>
+            <li><span>방송</span><span>02.3490.2742</span></li>
+            <li><span>모바일 액세서리</span><span>080.643.12345</span></li>
+          </ul>
+          <div class="info">
+            <small
+              >COPYRIGHT © 2018 NATIONAL GEOGRAPHIC KOREA LLT. ALL RIGHT
+              RESERVED</small
+            >
+            <ul class="personal-info">
+              <li><a href="#">개인정보 취급방침[업데이트됨]</a></li>
+              <li><a href="#">이용약관</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

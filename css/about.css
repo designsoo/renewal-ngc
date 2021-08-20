@@ -1,0 +1,92 @@
+.slogan {
+  height: 400px;
+  position: relative;
+}
+.slogan span > img {
+  position: absolute;
+  top: 140px;
+  left: 340px;
+}
+.slogan > p {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  padding: 170px 0 0 390px;
+}
+
+.ng-society {
+  background: url(../images/about-1.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+}
+.ng {
+  background: url(../images/about-2.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+}
+.ng-channel {
+  background: url(../images/about-3.jpg) no-repeat center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 600px;
+}
+.ng-magazine {
+  background: url(../images/about-4.jpg) no-repeat center center;
+  background-attachment: fixed;
+  height: 600px;
+}
+.ng-apparel {
+  background: url(../images/about-05.png) no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+
+/* common - text box */
+.ab__textBox {
+  width: 650px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.85);
+  padding: 150px 60px;
+  box-sizing: border-box;
+}
+.ab__textBox > h2 {
+  font-family: "NEO";
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  margin-bottom: 45px;
+}
+.ab__textBox > p {
+  font-family: "NotoSans-font";
+  font-size: 16px;
+  font-weight: normal;
+  width: 500px;
+  margin-bottom: 30px;
+  letter-spacing: -0.06em;
+  line-height: 1.7;
+  /* word-break: keep-all; */
+}
+section:nth-child(2n) .ab__textBox {
+  float: right;
+}
+
+/* common - more button */
+.about__moreBtn {
+  font-weight: 600;
+  display: block;
+  width: 180px;
+  height: 50px;
+  background: black;
+  text-align: center;
+  line-height: 50px;
+  border: 1px solid white;
+  transition: 0.5s ease-in-out;
+}
+.about__moreBtn:hover {
+  background-color: white;
+  color: black;
+}

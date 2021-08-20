@@ -1,0 +1,317 @@
+.channelTop-Wrap {
+  background: url(../images/channel-bg_01.jpg) no-repeat center center;
+  height: 945px;
+}
+.channelTop-Wrap .center {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.ch-title {
+  font-family: "milk";
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+/* channelTop-1 */
+.channelTop-1 {
+  padding-top: 120px;
+  margin-bottom: 50px;
+}
+.channelTop-1 img {
+  width: 300px;
+  float: left;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.channelTop__textBox {
+  float: left;
+  margin-left: 90px;
+}
+.channelTop__textBox > h3 {
+  font-family: "milk";
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 23px;
+  margin-bottom: 7px;
+}
+.channelTop__textBox > span {
+  font-family: "NotoSans-font";
+  font-weight: normal;
+  display: block;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.channelTop__textBox p {
+  font-family: "NotoSans-font";
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.7;
+  width: 770px;
+  margin-bottom: 10px;
+}
+.ch-moreBtn {
+  display: block;
+  width: 180px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: black;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 25px;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.ch-moreBtn:hover {
+  background-color: #ffdb00;
+  color: #161616;
+}
+/* channelTop-2 */
+.channelTop-2 {
+  position: relative;
+  margin-bottom: 150px;
+}
+.channelTop-2 h4 {
+  font-family: "milk";
+  font-weight: normal;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin: 0 0 20px 20px;
+}
+.ch-video {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ch-video > li {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.ch-video > li > a {
+  display: block;
+}
+.ch-video > li img {
+  width: 100%;
+  height: 100%;
+}
+.ch-video .ch-play {
+  width: 60px;
+  height: 60px;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.ch-video .ch-play img {
+  width: 100%;
+  height: 100%;
+}
+.ch-video > li:hover .ch-play {
+  display: block;
+}
+.ch-arrow .arrowLeft {
+  position: absolute;
+  top: 120px;
+  left: -50px;
+}
+.ch-arrow .arrowRight {
+  position: absolute;
+  top: 120px;
+  right: -50px;
+}
+
+/* ==============================================================
+                        mid : categroy select bar
+================================================================= */
+.categoryBar {
+  width: 100%;
+  height: 80px;
+  background-color: #161616;
+  margin-bottom: 50px;
+}
+.category {
+  overflow: hidden;
+  text-align: center;
+}
+.category > li {
+  float: left;
+  width: 14.25%;
+}
+.category > li > a {
+  font-family: "Helvetica-font";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 80px;
+  position: relative;
+}
+.category > li:hover a {
+  color: #ffdb00;
+}
+.category > li:hover a::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #ffdb00;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ==============================================================
+                        bottom : pick channel
+================================================================= */
+.channelBottom {
+  position: relative;
+}
+.channelBottom > .center {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* select */
+.channelBottom select {
+  float: right;
+  display: block;
+  width: 160px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  padding-left: 10px;
+  margin-left: 5px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.channelBottom select option {
+  color: black;
+}
+.ch-pick__items {
+  overflow: hidden;
+  padding: 30px 0 180px;
+  float: left;
+}
+.ch-pick__items > li {
+  width: 25%;
+  float: left;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.ch-pick__items > li > a img {
+  width: 100%;
+  height: 100%;
+}
+.items__textBox {
+  position: absolute;
+  bottom: 10px;
+  width: 230px;
+  height: 120px;
+  padding: 60px 0 0 15px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,0a0e0a+29,0a0e0a+56,0a0809+100&0+0,0.4+29,0.5+29,0.7+56,1+100 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(10, 14, 10, 0.5) 29%,
+    rgba(10, 14, 10, 0.7) 56%,
+    rgba(10, 8, 9, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(10, 14, 10, 0.5) 29%,
+    rgba(10, 14, 10, 0.7) 56%,
+    rgba(10, 8, 9, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(10, 14, 10, 0.5) 29%,
+    rgba(10, 14, 10, 0.7) 56%,
+    rgba(10, 8, 9, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#0a0809',GradientType=0 ); /* IE6-9 */
+
+  box-sizing: border-box;
+  transition: all 0.5s linear;
+}
+.ch-pick__items > li:hover .items__textBox {
+  /* background-color: #ffdb00; */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fefcea+0,f7f138+100&0+0,1+100 */
+  background: -moz-linear-gradient(
+    top,
+    rgba(254, 252, 234, 0) 0%,
+    rgba(247, 241, 56, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    rgba(254, 252, 234, 0) 0%,
+    rgba(247, 241, 56, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    rgba(254, 252, 234, 0) 0%,
+    rgba(247, 241, 56, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fefcea', endColorstr='#f7f138',GradientType=0 ); /* IE6-9 */
+}
+.ch-pick__items > li:hover .items__textBox p {
+  color: black;
+}
+.items__textBox p {
+  font-family: "NEO";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: lowercase;
+}
+
+/* page 1.2.3 <> */
+.ch-paging {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ch-page > li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #acacac;
+  text-align: center;
+  line-height: 40px;
+  margin-right: 3px;
+}
+.ch-page > .active {
+  background-color: #ffdb00;
+}
+.ch-page > li > a {
+  font-weight: 600;
+  color: #161616;
+}
+.ch-arrow > li {
+  display: inline-block;
+}
+.ch-arrow > li:first-child {
+  position: absolute;
+  top: 13px;
+  left: -17px;
+}
+.ch-arrow > li:last-child {
+  position: absolute;
+  top: 13px;
+  right: -17px;
+}

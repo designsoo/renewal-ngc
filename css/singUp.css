@@ -1,0 +1,156 @@
+.signUpWrap {
+  padding: 155px 0;
+  box-sizing: border-box;
+}
+
+.signUpWrap .center {
+  width: 1280px;
+  margin: 0 auto;
+}
+.signUpWrap .title {
+  font-size: 25px;
+  font-weight: 400;
+}
+.step {
+  float: right;
+}
+.step > li {
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #c6c6c6;
+  margin-left: 15px;
+  line-height: 14px;
+}
+.step > .active {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffda00;
+}
+.step > li > img {
+  vertical-align: middle;
+}
+
+/* subtitle */
+.subTitle {
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.subTitle span:last-child {
+  float: right;
+  color: #ffda00;
+}
+
+/* inputBox */
+.inputBox {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 75px 155px 75px 215px;
+  position: relative;
+}
+.inputBox::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffda00;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* table 영역 */
+table tr {
+  height: 70px;
+}
+table input {
+  cursor: pointer;
+  height: 30px;
+  outline: none;
+  border: 0;
+  background-color: #ffffff;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+table tr input[type="text"]:focus,
+table tr input[type="password"]:focus {
+  background: linear-gradient(#ffffff, #f7ff81);
+  color: black;
+  outline: none;
+}
+/* th */
+.inputBox tr th {
+  width: 25%;
+  text-align: left;
+  position: relative;
+}
+.inputBox tr th label {
+  font-size: 16px;
+  color: white;
+}
+.inputBox tr th::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffda00;
+  margin-right: 10px;
+  position: absolute;
+  top: 31px;
+  left: -20px;
+}
+.inputBox tr:nth-child(7) th::before {
+  display: none;
+}
+.inputBox tr:nth-child(8) th::before {
+  display: none;
+}
+.inputBox th label > span {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+
+/* td */
+.inputBox td > label,
+.inputBox td > span {
+  font-size: 14px;
+  font-weight: 300;
+  color: #a9a9a9;
+}
+.inputBox select,
+.inputBox input[type="button"] {
+  width: 120px;
+  height: 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.inputBox select option {
+  color: black;
+}
+.inputBox input[type="reset"],
+.inputBox input[type="submit"] {
+  width: 150px;
+  height: 45px;
+  color: #272727;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0;
+  background-color: c6c6c6;
+}
+.inputBox input[type="submit"] {
+  background-color: #ffda00;
+}
+.inputBox .not:focus {
+  display: none;
+}
+#mobile,
+#email {
+  margin-bottom: 5px;
+}
+#address {
+  margin-bottom: 10px;
+}

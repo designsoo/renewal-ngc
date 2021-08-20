@@ -1,0 +1,176 @@
+/* ==============================================================
+                        header - navi
+================================================================= */
+#nav {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  text-transform: uppercase;
+  background-color: rgba(24, 24, 24, 0.5);
+  height: 60px;
+}
+.nav__logo {
+  float: left;
+  background-color: black;
+  width: 180px;
+  height: 60px;
+  position: relative;
+}
+.nav__logo > a {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav__menu {
+  float: left;
+}
+.nav__menu > li {
+  float: left;
+  margin-left: 60px;
+  line-height: 60px;
+  position: relative;
+}
+.nav__menu > li > a {
+  font-family: "Helvetica-font";
+  font-weight: 500;
+}
+.nav__menu > li:hover > a {
+  color: #ffdb00;
+}
+.nav__menu > li > a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: #ffdb00;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s linear;
+}
+.nav__menu > li:hover > a::after {
+  width: 100%;
+}
+
+.nav__gnb {
+  float: right;
+  height: 60px;
+}
+.nav__gnb > li {
+  float: left;
+  margin-left: 30px;
+  line-height: 60px;
+}
+.nav__gnb > li > a {
+  font-family: "Helvetica-font";
+  font-weight: 500;
+}
+.nav__gnb > li:nth-child(2) > a {
+  color: #ffdb00;
+  padding: 5px 20px;
+  border-radius: 30px;
+  transition: all 0.4s ease-in-out;
+}
+.nav__gnb > li:nth-child(2):hover > a {
+  background-color: #ffdb00;
+  box-sizing: border-box;
+  padding: 5px 20px;
+  border-radius: 30px;
+  color: #333;
+}
+.nav__gnb > li:hover > a {
+  color: #ffdb00;
+}
+
+/* --- ham button --- */
+.nav__gnb .hamBtn {
+  width: 60px;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffdb00;
+}
+.hamBtn > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hamBtn__inner span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  transition: all 0.4s;
+}
+.hamBtn__inner span:first-child {
+  top: 0;
+}
+.hamBtn__inner span:nth-child(2) {
+  top: 9px;
+}
+.hamBtn__inner span:last-child {
+  bottom: 0;
+}
+/* ham-button motion */
+.hamBtn__inner.active .hamBtn__inner-1 {
+  -webkit-transform: translateY (9px) rotate (-45deg);
+  transform: translateY(9px) rotate(-45deg);
+}
+
+.hamBtn__inner.active .hamBtn__inner-2 {
+  opacity: 0;
+}
+
+.hamBtn__inner.active .hamBtn__inner-3 {
+  -webkit-transform: translateY(-9px) rotate(45deg);
+  transform: translateY(-9px) rotate(45deg);
+}
+
+/* --- sub-menu --- */
+.subMenu {
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 60px;
+  right: -350px;
+  bottom: 0;
+  width: 350px;
+  height: 945px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.subMenu__sns {
+  padding: 40px 0 0 180px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+.subMenu__sns > li {
+  float: left;
+  margin-left: 30px;
+}
+
+.subMenu__nav > li {
+  border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+}
+.subMenu__nav > li:hover {
+  background-color: #ffdb00;
+}
+.subMenu__nav > li > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 6px 0;
+}
+.subMenu__nav > li:hover a {
+  color: #000;
+}
+.subMenu__logo {
+  margin-top: 200px;
+  width: 20%;
+}

@@ -1,0 +1,126 @@
+.loginWrap .center {
+  width: 1060px;
+  margin: 0 auto;
+}
+.loginWrap {
+  padding: 230px 0 230px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.loginWrap .title {
+  font-family: "NotoSans-font";
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+/* 화원 로그인 */
+.login {
+  float: left;
+  width: 530px;
+  height: 430px;
+  background-color: #d6d6d6;
+}
+.Box {
+  padding: 60px;
+}
+.Box > span {
+  font-family: "NotoSans-font";
+  font-weight: 700;
+  font-size: 18px;
+  color: #181818;
+}
+.Box > p {
+  font-family: "NotoSans-font";
+  font-weight: 500;
+  font-size: 14px;
+  color: #626262;
+  margin: 20px 0 10px;
+}
+.input_text-a,
+.input_text-b {
+  width: 400px;
+  height: 50px;
+  border: 1px solid rgb(224, 224, 224);
+  margin-bottom: 5px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+.Box .input_text-a:focus,
+.Box .input_text-b:focus {
+  animation: frame 900ms ease-out infinite alternate;
+  /* background: linear-gradient(#ffffff, #dbdbdb); */
+  border: 1px solid rgb(224, 224, 224);
+  color: black;
+  outline: none;
+}
+@keyframes frame {
+  0% {
+    border-color: rgb(224, 224, 224);
+  }
+  100% {
+    border-color: rgb(155, 155, 155);
+  }
+}
+
+.Box input::placeholder {
+  color: #acacac;
+  margin-left: 5px;
+}
+label {
+  font-size: 14px;
+  color: #3b3b3b;
+  font-weight: 400;
+  margin-right: 8px;
+  line-height: 20px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin: -2px 10px 0 0;
+  vertical-align: middle;
+  background: url(../images/checkbox.png) no-repeat center center;
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label span {
+  background: url(../images/checkbox2.png) no-repeat center center;
+}
+
+.Box input[type="submit"] {
+  width: 400px;
+  height: 60px;
+  border: 0;
+  background-color: #3b3b3b;
+  cursor: pointer;
+  color: white;
+  margin-top: 20px;
+  font-family: "Helvetica-font";
+  font-size: 20px;
+  font-weight: 600;
+}
+/* 회원가입 */
+.signUp {
+  float: left;
+  width: 530px;
+  height: 430px;
+  background-color: #ffdb00;
+}
+.btn1,
+.btn2 {
+  display: block;
+  width: 400px;
+  height: 60px;
+  background-color: black;
+  font-family: "Helvetica-font";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 60px;
+  text-align: center;
+}
+.btn1 {
+  margin-bottom: 35px;
+}
