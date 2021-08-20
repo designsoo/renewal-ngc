@@ -1,3 +1,3 @@
 # renewal-ncg
 
-renewal website - national geographic😊
+renewal website - national geographic
